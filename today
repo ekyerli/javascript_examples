@@ -1,0 +1,46 @@
+var day = new Date().getDate();
+if (day<10) {
+day = '0' + day;
+}
+var dayString = day.toString();
+execution.setVariable("currentDate",dayString);
+var month = new Date().getMonth();
+var month = month +1;
+if (month<10) {
+month = '0' + month;
+}
+var monthString = month.toString();
+execution.setVariable("currentMonth",monthString);
+var year = new Date().getFullYear();
+var yearString = year.toString();
+execution.setVariable("currentYear",yearString);
+var nokta ="."
+var tarih = currentDate.concat(nokta, currentMonth, nokta, currentYear);
+ 
+var hour= new Date().getHours();
+if (hour<10) {
+hour = '0' + hour;
+}
+var hourString = hour.toString();
+execution.setVariable("currentHour",hourString);
+var min= new Date().getMinutes();
+if (min<10) {
+min= '0' + min;
+}
+var minString = min.toString();
+execution.setVariable("currentMin",minString);
+execution.setVariable("currentDate",tarih);
+---------------------------------------------------------------------
+var t = new Date();
+t.setDate(t.getDate());
+var tyear = t.getUTCFullYear();
+var tyearString = tyear.toString();
+var tmonth = t.getMonth()+1;
+var tmonthString = tmonth.toString();
+if(tmonthString <10) tmonthString ='0'+tmonthString ;
+var tday = t.getDate();
+var tdayString = tday.toString();
+if(tdayString <10) tdayString ='0'+tdayString ;
+
+var currentDay= tmonthString.concat('.',tdayString ,'.',tyearString );
+execution.setVariable("currentDay",currentDay);
