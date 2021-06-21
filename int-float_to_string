@@ -1,0 +1,6 @@
+var deger1 = 12;
+var deger2 = 12.2;
+d1String=deger1.toString();
+d2String=deger2.toString();
+execution.setVariable("d1String",d1String);
+execution.setVariable("d2String",d2String);
