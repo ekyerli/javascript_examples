@@ -1,0 +1,4 @@
+var today = new Date();
+var a = new Date(today.getFullYear(), today.getMonth()+1, 0);
+var b = a.toString();
+execution.setVariable("tarih",b);
