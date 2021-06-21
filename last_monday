@@ -1,0 +1,19 @@
+var a = new Date();
+var dayMonday = a.getDay(),
+diff = a.getDate() - dayMonday + (dayMonday == 0 ? -6:1);
+var c= new Date(a.setDate(diff));
+var yil=c.getFullYear();
+var yil=yil.toString();
+var ay=c.getMonth()+1;
+var ay=ay.toString();
+var gun=c.getDate();
+var gun=gun.toString();
+lastMonday=gun.concat(".",ay,".",yil)
+execution.setVariable("lastMonday",lastMonday);
+--------------------------------------------------------------------
+var today = new Date();
+var LWMonday = new Date();
+LWMonday=LWMonday.setDate(today.getDate() - (today.getDay()||7) +1);
+var monday = new Date(LWMonday);
+var dayMonday=monday.getDate();
+execution.setVariable("dayMonday",dayMonday); 
