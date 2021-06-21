@@ -1,0 +1,3 @@
+var deger = "12" 
+dFloat=Number(deger);
+ execution.setVariable("dFloat",dFloat);
