@@ -1,0 +1,6 @@
+var today = new Date();
+var LWSunday = new Date();
+LWSunday = LWSunday.setDate(today.getDate() - (today.getDay()||7));
+var sunday = new Date(LWSunday);
+var daySunday = sunday.getDate();
+execution.setVariable("daySunday",daySunday); 
