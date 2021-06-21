@@ -1,0 +1,15 @@
+var testVariable = execution.getVariable("testVariable");
+var regex = /^[0-9]*/gm;
+var result = testVariable.match(regex);
+var result2 = result;
+if (result!=null)
+{
+ var sonuc = "Eslesme Var";
+ execution.setVariable("result",result.toString());
+}
+else
+{
+var sonuc = "Eşleşme Yok";
+}
+execution.setVariable("sonuc",sonuc);
+execution.setVariable("testVariable",testVariable);
