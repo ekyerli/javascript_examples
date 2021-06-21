@@ -1,0 +1,13 @@
+var t = new Date();
+t.setDate(t.getDate()-1);
+var tyear = t.getUTCFullYear();
+var tyearString = tyear.toString();
+var tmonth = t.getMonth()+1;
+var tmonthString = tmonth.toString();
+if(tmonthString <10) tmonthString ='0'+tmonthString ;
+var tday = t.getDate();
+var tdayString = tday.toString();
+if(tdayString <10) tdayString ='0'+tdayString ;
+
+var yesterday= tmonthString.concat('.',tdayString ,'.',tyearString );
+execution.setVariable("yesterday ", yesterday);
