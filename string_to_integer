@@ -1,0 +1,4 @@
+var deger = "12"
+dFloat=parseFloat(deger);
+dInteger=dFloat.intValue();
+execution.setVariable("dInteger",dInteger);
